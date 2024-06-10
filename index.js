@@ -44,13 +44,40 @@ function createTargetValues(boundary){
     return targetCoordinates
 }
 
+function orientDetector(){
+
+}
+
+function summatePixelSpace(){
+
+}
+
 const radius = 1
 const targetVals = createTargetValues(radius)
 
 const detectorLength = 3
+const pixelTotal = 32
+const pixelLength = detectorLength / pixelTotal
+const pixelCenter = pixelLength / 2
+const pixelHolder = new Map()
+const pixelObjs = []
+for (var pixelNum = 1; pixelNum <= pixelTotal; pixelNum++){
+    pixelHolder.set(pixelNum, [])
+}
+
 const steps = 60
 const rotationAngle = 360/steps
-const pixelValue = 32
+const maxUnit = radius * 2
+const onePercent = maxUnit/100
+
+for(var angle = 0; angle <= 360; angle +=rotationAngle){
+    pixelHolder.forEach(pixel =>{
+        
+    })
+}
+
+
+
 
 
 
